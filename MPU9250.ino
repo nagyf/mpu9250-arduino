@@ -35,7 +35,6 @@ void setup() {
   // setting DLPF bandwidth to 20 Hz
   //IMU.setDlpfBandwidth(MPU9250::DLPF_BANDWIDTH_20HZ);
   // setting SRD to 19 for a 50 Hz update rate
-  delay(2000);
 }
 
 void loop() {
