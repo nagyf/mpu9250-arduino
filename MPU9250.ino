@@ -50,8 +50,8 @@ void loop() {
   float az = IMU.getAccelZ_mss();
   
   float gx = IMU.getGyroX_rads();
-  float gy = IMU.getGyroX_rads();
-  float gz = IMU.getGyroX_rads();
+  float gy = IMU.getGyroY_rads();
+  float gz = IMU.getGyroZ_rads();
 
   float mx = IMU.getMagX_uT();
   float my = IMU.getMagY_uT();
@@ -94,7 +94,9 @@ void loop() {
   Serial.print(";");
   Serial.print(roll, 6);
   Serial.print(";");
-  
+
+  Serial.print(lastUpdate, 6);
+  Serial.print(";");
   Serial.println(IMU.getTemperature_C(), 6);
   delay(100);
 }
