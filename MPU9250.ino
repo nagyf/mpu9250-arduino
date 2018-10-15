@@ -55,6 +55,7 @@ void loop() {
   float mx = IMU.getMagX_uT();
   float my = IMU.getMagY_uT();
   float mz = IMU.getMagZ_uT();
+  float temperature = IMU.getTemperature_C();
 
   MahonyQuaternionUpdate(ax, ay, az, gx, gy, gz, my, mx, mz);
 
@@ -94,9 +95,9 @@ void loop() {
   Serial.print(roll, 6);
   Serial.print(";");
 
-  Serial.print(lastUpdate, 6);
+  Serial.print(lastUpdate);
   Serial.print(";");
-  Serial.println(IMU.getTemperature_C(), 6);
+  Serial.println(temperature, 2);
   delay(100);
 }
 
