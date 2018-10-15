@@ -1,5 +1,6 @@
 # Introduction
 This project contains a small Arduino program that is used to read data from a [MPU 9250](https://www.invensense.com/download-pdf/mpu-9250-datasheet/) sensor and send it through the serial port.
+The official [Data Sheet](https://raw.githubusercontent.com/nagyf/mpu9250-arduino/master/doc/PS-MPU-9250A-01-v1.1.pdf) is available in the repository.
 
 # Hookup guide
 
